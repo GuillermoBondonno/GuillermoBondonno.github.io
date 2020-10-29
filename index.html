@@ -16,7 +16,7 @@
     </head>
     <body id="page-top">
         <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
-            <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top">INICIO</a>
+            <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top">HOME</a>
                 <button class="navbar-toggler navbar-toggler-right font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fas fa-bars"></i></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
@@ -26,6 +26,7 @@
                         </li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">CONTACT</a>
                         </li>
+                        
                     </ul>
                 </div>
             </div>
@@ -64,16 +65,17 @@
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div><img class="img-fluid" src="assets/img/portfolio/cabin.png" alt="Cryptocurrency trading bot"/>
+                            </div><img class="img-fluid" src="assets/img/portfolio/crypto.png" alt="Cryptocurrency trading bot"/>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div><img class="img-fluid" src="assets/img/portfolio/cake.png" alt="NLTK sentiment analysis"/>
+                            </div><img class="img-fluid" src="assets/img/portfolio/NLTK.png" alt="NLTK sentiment analysis"/>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -94,10 +96,20 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="Cryptocurrency trading bot"/>
+                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/crypto.png" alt="Cryptocurrency trading bot"/>
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                                    <p class="mb-5">
+                                        A simple script to practice Keras. <br><br>
+
+crypto_data: 4 csv files that contain historical data<br><br>
+
+deep-net.py: It processes the files in crypto_data and generates starter_data.pickle, then it builds the model and trains it. The model takes historical data from the 4 coins and returns a prediction<br><br>
+
+trading_bot_loop.py: takes live price data from the binance client and processes the data to feed it to the model. Also, here a simple Account class is defined to handle balance and transactions
+                                    </p>
+                                    <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/GuillermoBondonno/projects/tree/master/Crypto%20Trading%20Bot">
+                                        <img src="assets/img/portfolio/github.png">
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -105,6 +117,8 @@
                 </div>
             </div>
         </div>
+
+
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal1Label" aria-hidden="true">
             <div class="modal-dialog modal-xl" role="document">
                 <div class="modal-content">
@@ -121,10 +135,24 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="NLTK sentiment analysis"/>
+                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/NLTK.png" alt="NLTK sentiment analysis"/>
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                                    <p class="mb-5"><br>A collection of the functions used to prepare,
+                                                        analyze and build a text classifier to determine
+                                                        the positivity or negativity of a sentence<br><br>
+
+                                                        We use SVC and Gaussian Naive Bayes classifiers according
+                                                         to the recommendations here: https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html.<br><br>
+                                                          At the end, we estimate the performance of these
+                                                           two and both combined. We see that both classifiers
+                                                           combined produce a decent result.<br><br>
+
+                                                        Either way, this is a very simple model that works
+                                                         mainly with the appearance of certain key words.</p>
+                                    
+ <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/GuillermoBondonno/projects/blob/master/nltk%20sentiment%20predictor/NLTK%20Classifier.ipynb">
+                                        <img src="assets/img/portfolio/github.png">
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -132,6 +160,9 @@
                 </div>
             </div>
         </div>
+
+        <!-- To add another porfolio item, copy the content div as well as the section div that is associated with the item -->  
+
         <section class="page-section bg-primary text-white mb-0" id="about">
             <div class="container">
                 <!-- About Section Heading-->
@@ -195,20 +226,23 @@
                     </div>
                     <!-- Footer Social Icons-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="mb-4">AROUND THE WEB</h4><a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/StartBootstrap"><i class="fab fa-fw fa-facebook-f"></i></a><a class="btn btn-outline-light btn-social mx-1" href="https://www.twitter.com/sbootstrap"><i class="fab fa-fw fa-twitter"></i></a><a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/startbootstrap"><i class="fab fa-fw fa-linkedin-in"></i></a><a class="btn btn-outline-light btn-social mx-1" href="https://www.dribble.com/startbootstrap"><i class="fab fa-fw fa-dribbble"></i></a>
+                        <h4 class="mb-4">AROUND THE WEB</h4>
+                        
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/guillermo-bondonno-758743167/">
+                            <i class="fab fa-fw fa-linkedin-in"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/GuillermoBondonno/projects">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        
                     </div>
                     <!-- Footer About Text-->
-                    <div class="col-lg-4">
-                        <h4 class="mb-4">ABOUT FREELANCER</h4>
-                        <p class="pre-wrap lead mb-0">Freelance is a free to use, MIT licensed Bootstrap theme created by Start Bootstrap</p>
-                    </div>
+                    
                 </div>
             </div>
         </footer>
         <!-- Copyright Section-->
-        <section class="copyright py-4 text-center text-white">
-            <div class="container"><small class="pre-wrap">Copyright © Your Website 2020 </small></div>
-        </section>
+        
         <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
         <div class="scroll-to-top d-lg-none position-fixed"><a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
         <!-- Bootstrap core JS-->
